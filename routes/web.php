@@ -32,5 +32,9 @@ Route::middleware(['auth','isAdmin:true'])->group(function()
 
 
 Route::get('/contact',[ContactController::class,'contact']);
+Route::get('/video',[ContactController::class,'video']);
+
+Route::post('/videopost',[ContactController::class,'videopost']);
+Route::get('/vueimage',[ContactController::class,'vueimage']);
 
 require __DIR__.'/auth.php';
