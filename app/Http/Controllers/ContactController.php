@@ -7,6 +7,7 @@ use App\Models\VideoModels;
 use Illuminate\Http\File;
 use Illuminate\Support\Facades\Storage;
 
+
 class ContactController extends Controller
 {
     //
@@ -14,6 +15,7 @@ class ContactController extends Controller
     {
         if(auth()->user()->isAdmin == true)
         {
+      
         return redirect(url('/private'));
         } 
        else 
